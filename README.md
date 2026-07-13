@@ -35,7 +35,7 @@ The game takes place in Glacier National Park. The player starts at the Visitor 
 ```text
 IT140_TEXT_ADVENTURE/
 ├── design/
-│   ├── design_document.docx
+│   ├── design_document.md
 │   ├── map.png
 │   └── pseudocode.txt
 ├── src/
@@ -49,6 +49,6 @@ IT140_TEXT_ADVENTURE/
 The design documents for this project are located in the `design` folder.
 
 Contents include:
-- `design_document.docx` — Original project planning document
+- `design_document.md` — Original project planning document
 - `map.png` — Map of the game world and room connections
 - `pseudocode.txt` — Pseudocode for player movement, inventory management, and game logic
