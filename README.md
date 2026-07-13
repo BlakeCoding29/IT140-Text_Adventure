@@ -42,3 +42,12 @@ IT140_TEXT_ADVENTURE/
 │   └── text_adventure.py
 ├── .gitignore
 └── README.md
+
+## Project Design
+
+The design documents for this project are located in the `design` folder.
+
+Contents include:
+- `design_document.docx` — Original project planning document
+- `map.png` — Map of the game world and room connections
+- `pseudocode.txt` — Pseudocode for player movement, inventory management, and game logic
