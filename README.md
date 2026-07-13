@@ -33,7 +33,7 @@ The game takes place in Glacier National Park. The player starts at the Visitor 
 ## Repository Structure
 
 ```text
-IT140_TEXT_ADVENTURE/
+IT140 Text_Adventure/
 ├── design/
 │   ├── design_document.md
 │   ├── map.png
