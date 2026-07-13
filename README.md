@@ -42,6 +42,7 @@ IT140_TEXT_ADVENTURE/
 │   └── text_adventure.py
 ├── .gitignore
 └── README.md
+```
 
 ## Project Design
 
