@@ -1,0 +1,117 @@
+Moving Between Rooms
+--------------------
+
+START
+
+SET current_room to Visitor Center
+
+SET game_running to true
+
+WHILE game_running is true
+
+    DISPLAY the current room
+
+    DISPLAY the player's inventory
+
+    ASK the player to enter a command such as:
+        "go North"
+        "go South"
+        "go East"
+        "go West"
+        "get item"
+
+    INPUT player_command
+
+    IF player_command begins with "go"
+
+        GET the direction from player_command
+
+        IF the direction is connected to the current room
+
+            SET current_room to the room in that direction
+
+            DISPLAY the new current room
+
+        ELSE
+
+            DISPLAY "You cannot go that way"
+
+        END IF
+
+    ELSE IF player_command begins with "get"
+
+        CALL Get Item process
+
+    ELSE
+
+        DISPLAY "Invalid command"
+
+    END IF
+
+    IF current_room is Ranger Station
+
+        IF all required items have been collected
+
+            DISPLAY "You collected all of the supplies"
+
+            DISPLAY "You safely reached the ranger station"
+
+            DISPLAY "You win"
+
+        ELSE
+
+            DISPLAY "You entered the ranger station before collecting all of the supplies"
+
+            DISPLAY "The grizzly bear ends your adventure"
+
+            DISPLAY "Game over"
+
+        END IF
+
+        SET game_running to false
+
+    END IF
+
+END WHILE
+
+
+Getting an Item
+---------------
+
+GET the item name from player_command
+
+IF the current room contains an item
+
+    IF the item entered matches the item in the current room
+
+        IF the item is not already in the inventory
+
+            ADD the item to the inventory
+
+            REMOVE the item from the current room
+
+            DISPLAY "Item added to inventory"
+
+            DISPLAY the updated inventory
+
+        ELSE
+
+            DISPLAY "You already collected that item"
+
+        END IF
+
+    ELSE
+
+        DISPLAY "That item is not in this location"
+
+    END IF
+
+ELSE
+
+    DISPLAY "There is no item in this location"
+
+END IF
+
+RETURN to the main gameplay loop
+
+END
