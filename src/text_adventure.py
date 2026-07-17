@@ -49,6 +49,18 @@ rooms = {
 
 current_room = "Visitor Center"
 
-print("Current room:", current_room)
-print("Available directions:", rooms[current_room])
+while current_room != "Ranger Station":
+    print("\nCurrent room:", current_room)
+
+    direction = input("Enter a direction: ").lower()
+
+    if direction in rooms[current_room] and direction in [
+        "north", "south", "east", "west"
+    ]:
+        current_room = rooms[current_room][direction]
+    else:
+        print("You cannot go that way.")
+
+print("\nYou entered the Ranger Station.")
+print("The grizzly bear ends your adventure.")
     

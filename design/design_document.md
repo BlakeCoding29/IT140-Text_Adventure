@@ -102,6 +102,9 @@ The game follows these general steps:
 - ✔ Pseudocode completed
 - ✔ Repository created and documented
 - ☐ Map completed
-- ☐ Python implementation
+- ✓ Basic player movement implemented
+- ☐ Inventory system
+- ☐ Win and loss conditions implemented
+- ☐ Final testing
 - ☐ Testing and debugging
 - ☐ Final project submission

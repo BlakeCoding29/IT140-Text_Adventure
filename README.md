@@ -25,7 +25,7 @@ The game takes place in Glacier National Park. The player starts at the Visitor 
 - [x] Create item collection pseudocode
 - [ ] Complete the storyboard and map
 - [x] Build the room dictionary
-- [ ] Add player movement
+- [x] Add player movement
 - [ ] Add the inventory system
 - [ ] Add win and loss conditions
 - [ ] Test and finish the game
